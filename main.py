@@ -2,7 +2,7 @@ import requests as r
 import random
 import streamlit as st
 
-pokemon=st.text_input(value="bulbasaur",label="Pokemon Name")
+pokemon=st.text_input(value="Bulbasaur",label="Pokemon Name")
 level=st.text_input(value="1",label="Pokemon Level")
 
 try:
