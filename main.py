@@ -11,7 +11,7 @@ try:
   name = data['name'].title()
   base_stats = {}
   for stat in data["stats"]:
-    if stat["base_stat"]>=10 and stat["base_stat"]<=24:
+    if stat["base_stat"]>=1 and stat["base_stat"]<=24:
       dice=2
     elif stat["base_stat"]>=25 and stat["base_stat"]<=44:
       dice=3
