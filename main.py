@@ -39,7 +39,7 @@ try:
   st.write(f"Level {level} {name}")
   st.write("Stats:")
   for i in stats:
-    st.write(f"{i.title()}: {stats[i]}")
+    st.write(f"D{base_stats[i]} | {i.title()}: {stats[i]}")
 
 except:
   st.write("An Error occured")
