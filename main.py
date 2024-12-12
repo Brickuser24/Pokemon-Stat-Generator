@@ -42,7 +42,7 @@ try:
 	st.write(f"Level {level} {name}")
 	st.write("Stats:")
 	for i in ["hp","attack","special-attack","defense","special-defense","speed"]:
-		st.write(f"D{base_stats[i]} | {i.title()}: {stats[i]}")
+		st.write(f"2D{base_stats[i]} | {i.title()}: {stats[i]}") if i == "hp" else st.write(f"D{base_stats[i]} | {i.title()}: {stats[i]}")
 
 except:
 	st.write("An Error occured")
