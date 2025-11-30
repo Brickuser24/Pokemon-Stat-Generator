@@ -7,7 +7,7 @@ with open("Pokedex.txt", "r") as f:
     options=read.split("\n")
     f.close()
 
-pokemon=st.text_input(value="Bulbasaur",label="Pokemon Name",options=options)
+pokemon=st.selectbox("Pokemon Name", placeholder="Select a Pokemon", options=options)
 level=st.text_input(value="1",label="Pokemon Level")
 
 try:
