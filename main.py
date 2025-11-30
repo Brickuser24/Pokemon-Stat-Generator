@@ -2,7 +2,12 @@ import requests as r
 import random
 import streamlit as st
 
-pokemon=st.text_input(value="Bulbasaur",label="Pokemon Name")
+with open("Pokedex.txt", "r") as f:
+    read=f.read()
+    options=read.split("\n")
+    f.close()
+
+pokemon=st.text_input(value="Bulbasaur",label="Pokemon Name",options=options)
 level=st.text_input(value="1",label="Pokemon Level")
 
 try:
